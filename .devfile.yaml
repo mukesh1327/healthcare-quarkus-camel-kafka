@@ -1,0 +1,19 @@
+schemaVersion: 2.2.2
+metadata:
+  name: Healthcare Demo - Quarkus camel
+components:
+  - name: healthcare-demo-udi
+    container:
+      image: registry.redhat.io/devspaces/udi-rhel9:latest
+      env:
+        - name: KUBEDOCK_ENABLED
+          value: 'true'
+        - name: USE_JAVA21
+          value: 'true'
+      volumeMounts:
+        - name: m2
+          path: /home/user/.m2
+      mountSources: true
+  - name: m2
+    volume:
+      size: 1G
