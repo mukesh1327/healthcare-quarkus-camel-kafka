@@ -3,7 +3,6 @@
         "esbenp.prettier-vscode",
         "redhat.vscode-yaml",
         "redhat.vscode-quarkus",
-        "redhat.vscode-apache-camel",
         "cnshenj.vscode-task-manager",
         "redhat.vscode-openshift-connector",
         "redhat.vscode-xml",
