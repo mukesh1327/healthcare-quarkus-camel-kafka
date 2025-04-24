@@ -10,6 +10,11 @@ components:
           value: 'true'
         - name: USE_JAVA21
           value: 'true'
+      endpoints:
+        - exposure: none
+          name: debug
+          protocol: tcp
+          targetPort: 5005
       volumeMounts:
         - name: m2
           path: /home/user/.m2
